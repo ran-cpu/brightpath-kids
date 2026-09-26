@@ -8,41 +8,8 @@ export const firebaseConfig = {
 };
 
 export const profiles = {
-  admin: {
-    id: "admin",
-    email: "ran.forest@gmail.com",
-    name: "Admin",
-    emoji: "🛡️",
-    role: "admin"
-  },
-
-  amit: {
-    id: "amit",
-    email: "amitlevi9999999@gmail.com",
-    name: "Amit Levi",
-    emoji: "🧑‍🚀",
-    role: "student",
-    age: 14,
-    grade: "Grade 8"
-  },
-
-  maya: {
-    id: "maya",
-    email: "mayulit2014@gmail.com",
-    name: "Maya Levi",
-    emoji: "👩‍🎨",
-    role: "student",
-    age: 12,
-    grade: "Grade 6"
-  },
-
-  ella: {
-    id: "ella",
-    email: "ella@itrna.com",
-    name: "Ella Levi",
-    emoji: "🦄",
-    role: "student",
-    age: 6,
-    grade: "Kindergarten"
-  }
+  admin: { id:"admin", email:"ran.forest@gmail.com", name:"Admin", emoji:"🛡️", role:"admin" },
+  amit: { id:"amit", email:"amitlevi9999999@gmail.com", name:"Amit Levi", emoji:"🧑‍🚀", role:"student", age:14, grade:"Grade 8" },
+  maya: { id:"maya", email:"mayulit2014@gmail.com", name:"Maya Levi", emoji:"👩‍🎨", role:"student", age:12, grade:"Grade 6" },
+  ella: { id:"ella", email:"ran.forest+ella@gmail.com", name:"Ella Levi", emoji:"🦄", role:"student", age:6, grade:"Kindergarten" }
 };

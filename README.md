@@ -1,78 +1,64 @@
-# BrightPath Kids — GitHub Pages + Firebase
+# BrightPath Hero Academy — Gamified Edition
 
-This package is ready for the repository:
-`https://github.com/ran-cpu/brightpath-kids`
+This version upgrades BrightPath Kids into a superhero-learning campaign with original hero characters and a cinematic team-hero theme.
 
-## Upload these files to the repository root
-- `index.html`
-- `styles.css`
-- `app.js`
-- `config.js`
-- `firestore.rules`
-- `.nojekyll`
-- `README.md`
+## Hero progression
+0. Baby Kitten — 0 XP
+1. Brave Cub — 250 XP
+2. Shield Scout — 550 XP
+3. Iron Lynx — 900 XP
+4. Thunder Prowler — 1300 XP
+5. Web Guardian — 1800 XP
+6. Star Sentinel — 2400 XP
+7. Cosmic Panther — 3100 XP
+8. Infinity Champion — 3900 XP
 
-## Firebase setup
+These are original characters rather than official Marvel/Avengers art or branding, so the public website does not rely on copyrighted character assets.
 
-### Authentication
-Already expected:
-- `admin@itrna.com`
-- `amit@itrna.com`
-- `maya@itrna.com`
+## Scoring
+Each mission uses the student's BEST score:
+- score itself: up to 200 XP (2 XP for every percentage point)
+- 60%+: +100 XP and unlocks the next mission
+- 85%+: +50 XP excellence bonus
+- 100%: +50 XP perfect bonus
+- maximum = 400 XP per mission
 
-Ella can be created later:
-- `ella@itrna.com`
+Retakes increase total XP only when the best score improves.
 
-### Firestore Rules
-In Firebase Console go to:
-**Firestore Database → Rules**
+## Included missions
+Nine starter missions are included in `content.js`:
+- Amit: Hebrew / English / Math
+- Maya: Hebrew / English / Math
+- Ella: Hebrew / English / Math
 
-Replace the existing rules with the contents of `firestore.rules` and click **Publish**.
+Maya's Hebrew mission contains the existing full unseen `תעלומת התיק שנעלם`.
 
-### Authorized domain
-Go to:
-**Authentication → Settings → Authorized domains**
+## IMPORTANT: Firebase accounts expected by config.js
+- Admin: ran.forest@gmail.com
+- Amit: amitlevi9999999@gmail.com
+- Maya: mayulit2014@gmail.com
+- Ella: ran.forest+ella@gmail.com
 
-Add:
-`ran-cpu.github.io`
+Ella can remain uncreated until you are ready.
 
-Later, when using the custom domain, also add:
-`learn.itrna.com`
+## Deploy update to GitHub Pages
+Replace the files in the ROOT of `ran-cpu/brightpath-kids` with:
+- index.html
+- styles.css
+- app.js
+- config.js
+- content.js
+- firestore.rules
+- README.md
+- .nojekyll
 
-## Enable GitHub Pages
-In GitHub open:
-**Settings → Pages**
+Then Firebase:
+1. Firestore Database > Rules
+2. Replace the current rules with `firestore.rules`
+3. Publish
 
-Choose:
-- Source: **Deploy from a branch**
-- Branch: **main**
-- Folder: **/(root)**
+Then log in as Admin and click **Seed / refresh all missions** once.
+GitHub Pages should redeploy automatically after the commit.
 
-Save.
-
-The first site URL should be:
-`https://ran-cpu.github.io/brightpath-kids/`
-
-## First run
-1. Open the site.
-2. Log in as Admin using the password you created in Firebase.
-3. Click **Seed / refresh starter challenges**.
-4. Log out.
-5. Log in as Maya or Amit and complete a challenge.
-6. Log back in as Admin and confirm the attempt appears.
-
-## What is included
-- Separate Admin, Amit, Maya and Ella profiles
-- Separate student progress
-- Admin dashboard
-- English and Hebrew challenge areas
-- Automatic grading
-- Saved attempts in Firestore
-- Hebrew RTL
-- Responsive layout
-- Starter Hebrew unseen with 15 questions
-- Starter English reading challenge
-- Starter Kindergarten English/Hebrew challenges for Ella
-
-## Security note
-The Firebase web configuration in `config.js` is intended to be public in client-side Firebase apps. Data protection comes from Firebase Authentication and the Firestore rules. Do not place passwords in the GitHub repository.
+## Important
+The theme is intentionally an original superhero-team design rather than official Avengers/Marvel logos, names or artwork. This makes it much safer to host publicly on your own domain while keeping the heroic progression feeling.
