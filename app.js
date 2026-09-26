@@ -75,7 +75,7 @@ function shell(x){
         ${S.profile?`<span class="badge identity">${S.profile.emoji} ${esc(S.profile.name)}</span>`:''}
         ${S.user?`<button class="btn ghost" data-home>Mission Map</button> <button class="btn danger" data-out>Log out</button>`:''}
       </div>
-    </header>${x}</div>`;
+    </header>${x}${S.user?`<nav class="mobile-dock" aria-label="Mobile navigation"><button class="mobile-dock-btn" data-home><span>🗺️</span><b>${S.profile?.role==='admin'?'Dashboard':'Mission Map'}</b></button>${S.profile?.role==='student'?`<div class="mobile-dock-rank"><span>${hero.icon}</span><b>L${hero.level}</b><small>${xp} XP</small></div>`:''}<button class="mobile-dock-btn danger-dock" data-out><span>↪️</span><b>Log out</b></button></nav>`:''}</div>`;
 }
 
 function login(){
