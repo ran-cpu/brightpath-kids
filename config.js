@@ -1,2 +1,48 @@
-export const firebaseConfig={apiKey:"AIzaSyA-R_PX8ThhbFoLDEWApS_hp0JqquXOPYw",authDomain:"brightpath-kids.firebaseapp.com",projectId:"brightpath-kids",storageBucket:"brightpath-kids.firebasestorage.app",messagingSenderId:"747871395349",appId:"1:747871395349:web:79d2aa41dee9f563ff781c"};
-export const profiles={admin:{id:"admin",email:"admin@itrna.com",name:"Admin",emoji:"🛡️",role:"admin"},amit:{id:"amit",email:"amit@itrna.com",name:"Amit Levi",emoji:"🧑‍🚀",role:"student",age:14,grade:"Grade 8"},maya:{id:"maya",email:"maya@itrna.com",name:"Maya Levi",emoji:"👩‍🎨",role:"student",age:12,grade:"Grade 6"},ella:{id:"ella",email:"ella@itrna.com",name:"Ella Levi",emoji:"🦄",role:"student",age:6,grade:"Kindergarten"}};
+export const firebaseConfig = {
+  apiKey: "AIzaSyA-R_PX8ThhbFoLDEWApS_hp0JqquXOPYw",
+  authDomain: "brightpath-kids.firebaseapp.com",
+  projectId: "brightpath-kids",
+  storageBucket: "brightpath-kids.firebasestorage.app",
+  messagingSenderId: "747871395349",
+  appId: "1:747871395349:web:79d2aa41dee9f563ff781c"
+};
+
+export const profiles = {
+  admin: {
+    id: "admin",
+    email: "ran.forest@gmail.com",
+    name: "Admin",
+    emoji: "🛡️",
+    role: "admin"
+  },
+
+  amit: {
+    id: "amit",
+    email: "amitlevi9999999@gmail.com",
+    name: "Amit Levi",
+    emoji: "🧑‍🚀",
+    role: "student",
+    age: 14,
+    grade: "Grade 8"
+  },
+
+  maya: {
+    id: "maya",
+    email: "mayulit2014@gmail.com",
+    name: "Maya Levi",
+    emoji: "👩‍🎨",
+    role: "student",
+    age: 12,
+    grade: "Grade 6"
+  },
+
+  ella: {
+    id: "ella",
+    email: "ella@itrna.com",
+    name: "Ella Levi",
+    emoji: "🦄",
+    role: "student",
+    age: 6,
+    grade: "Kindergarten"
+  }
+};
